@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/
+      #表示是否注册自身到eureka服务器,因为当前这个应用就是eureka服务器,没必要注册自身,所以这里是false
+    register-with-eureka: false
+  server:
+    enable-self-preservation: false
+spring:
+  application:
+    name: eureka
+#server:
+#  port: 8761
